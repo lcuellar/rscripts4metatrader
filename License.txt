@@ -301,11 +301,8 @@ EXHIBIT A (to the Adaptive Public License)
     The Initial Contributor is: 	XMPH.FOREX@GMAIL.COM, identified through OpenPGP certificate on 
 		http://keyserver.pgp.com/vkd/GetWelcomeScreen.event
 		http://pgpkeys.pca.dfn.de/
-      	
-    [Enter full name of Initial Contributor]
 
     Address of Initial Contributor: 	SEND email with PGP-key for verification
-
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: SKS 1.0.10
 
@@ -341,7 +338,6 @@ ftyn3HNGY6GuK0rcIrZbQtIF/n7P63ghSYP/9JvKFqexjN1eTN3FIGmpDz+KWjiqrOuda+5A
 
     PART 3: GOVERNING JURISDICTION
     For the purposes of this License, the Governing Jurisdiction is the Province of Quebec, Canada.
-    [Initial Contributor to Enter Governing Jurisdiction here]
 
     PART 4: THIRD PARTIES
     For the purposes of this License, "Third Party" has the definition set forth below in the ONE paragraph selected by the Initial Contributor from paragraphs A, B, C, D and E when the Initial 
@@ -364,7 +360,7 @@ ftyn3HNGY6GuK0rcIrZbQtIF/n7P63ghSYP/9JvKFqexjN1eTN3FIGmpDz+KWjiqrOuda+5A
     The default definition of "THIRD PARTY" is the definition set forth in paragraph A, if NONE OR MORE THAN ONE of paragraphs A, B, C, D or E in this Part 4 are selected by the Initial Contributor.
 
     PART 5: NOTICE
-	THE LICENSED WORK IS PROVIDED UNDER THE TERMS OF THE ADAPTIVE PUBLIC LICENSE ("LICENSE") AS FIRST COMPLETED BY: XMPH.FOREX@GMAIL.COM, as verified on http://pgpkeys.pca.dfn.de/ as identified by 
+	THE LICENSED WORK IS PROVIDED UNDER THE TERMS OF THE ADAPTIVE PUBLIC LICENSE ("LICENSE") AS FIRST COMPLETED BY: XMPH.FOREX@GMAIL.COM, as verified on http://pgpkeys.pca.dfn.de/ and identified by 
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: SKS 1.0.10 
 
