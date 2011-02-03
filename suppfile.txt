@@ -1,9 +1,9 @@
 Part 1: DESCRIPTION REQUIREMENTS OF Subsequent Work CHANGES
 
-	a) You must cause all Covered Code to which You contribute to contain a file documenting the changes You made to create that Covered Code and
+	a) You must cause all Covered Code to which you contribute to contain a file documenting the changes You made to create that Covered Code and
 		the date of any change.
-		1) The Designated Website in this license is SVN-compliant so as to ease and automate the process of changes documentation. Each subsequent 
-		   contributor may enquire to XMPH.FOREX@GMAIL.COM for a proper login information to commit changes.
+		1) The Designated Website in this license is SVN-compliant so as to ease and automate the process of documenting changes to Covered Code. Each subsequent 
+		   contributor may enquire to XMPH.FOREX@GMAIL.COM for login information to commit changes through that SVN.
 
 	b) You must include a prominent statement that the Modification is derived, directly or indirectly, from Original Code provided
 		by the Initial Developer and including the name of the Initial Developer in (a) the Source Code, and (b) in any notice in an Executable version
