@@ -8,3 +8,6 @@ Add your content here.
 = Details =
 
 Determining the Initial Deposit as the maximum Initial Balance of all aggregated strategies
+
+res[[3,4]]$CumulativeBalance
+res[[3,4]]$CumulativeBalance[length(res[[3,4]]$CumulativeBalance)]
