@@ -65,10 +65,10 @@ MT4_StratRep_Analyzer = function(...)
 		 "Argument ", i, " is not of type String/Character. \n Function Exit here. \n\n\n"); stop()}
 	}
 
+	if (i>1){
 	SR_CumulBalance = MT4_Aggregate_Reports(output)
-
 	temp = list(name="CumulativeBalance", SR_Parsed=0, SR_TimeSerie=SR_CumulBalance)
-	output = cbind(output, temp)
+	output = cbind(output, temp)}
 
 	return(output)
 }
@@ -147,18 +147,26 @@ MT4_DisplaySRAnalysis = function (TS_asList, ReportName)
 
 MT4_Aggregate_Reports = function (oo)
 {
-	NbReports = length(oo[1,])
+	NbReports = length(oo[1,]); 
 	for (i in 1:NbReports)
 	{
-		if(i==1){AccProfit = zoo(oo[[3,i]]$Profit, as.chron(oo[[3,i]]$timeBalance))}
-		else {AccProfit = merge(AccProfit, i=zoo(oo[[3,i]]$Profit, as.chron(oo[[3,i]]$timeBalance)), fill=0) }	
+		if(i==1){AccProfit = zoo(oo[[3,i]]$Profit, as.chron(oo[[3,i]]$timeBalance));}
+		else 
+		{AccProfit = merge(AccProfit, i=zoo(oo[[3,i]]$Profit, as.chron(oo[[3,i]]$timeBalance)), fill=0) 
+		}	
 	}
 	
-	# Summing every profit with respect to tie stamp
-	temp = AccProfit[,2]+AccProfit[,1]+AccProfit[,3] # temp = as.numeric(AccProfit[,1])
+	# Summing every profit with respect to time stamp
+	temp = 0
+	for (i in 1:NbReports){ temp = temp + AccProfit[,i]}
+
+	# Determining the Initial Deposit as the maximum Initial Balance of all aggregated strategies
+	InitialDeposit = 0;
+	for (i in 1:NbReports) {if (InitialDeposit < (as.numeric(res[[3,i]]$Balance[1])-as.numeric(res[[3,i]]$Profit[1])) ) 
+	{InitialDeposit = as.numeric(res[[3,i]]$Balance[1])-as.numeric(res[[3,i]]$Profit[1])}}
 
 	# Constructing the Accrual of the reports.
-	CumulativeBalance  = c(2500) + as.numeric(temp[1]);
+	CumulativeBalance  = c(InitialDeposit) + as.numeric(temp[1]);
 	for (i in 2:length(temp))
 		{CumulativeBalance[i] = CumulativeBalance[i-1] + as.numeric(temp[i])}
 	CumulativeBalance = zoo(CumulativeBalance, as.chron(time(temp)) )
