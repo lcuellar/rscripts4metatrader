@@ -1,0 +1,4 @@
+Trading System Forex by funyoo
+
+Every example of StrategyTester files are from the public domain section of the website.
+http://www.tradingsystemforex.com/expert-advisors-backtesting/
