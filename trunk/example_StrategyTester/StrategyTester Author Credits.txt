@@ -1,4 +1,5 @@
-Trading System Forex by funyoo
+These StrategyTester files were copied from the website Trading System Forex hosted by funyoo.
+This is the perfect resource for testing any R code on different StrategyTester reports.
 
-Every example of StrategyTester files are from the public domain section of the website.
+Every example of StrategyTester files are from the public section of the website.
 http://www.tradingsystemforex.com/expert-advisors-backtesting/
