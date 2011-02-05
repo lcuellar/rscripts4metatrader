@@ -1,0 +1,25 @@
+#summary One-sentence summary of this page.
+This is a quick tutorial on using the provided scripts
+
+= Install =
+
+
+ # Download [http://www.r-project.org/ http://www.r-project.org/Rlogo.jpg] 
+ # Start R
+ # Go to *File->Change Dir* and point to the folder containing the scripts
+
+
+
+= Usage =
+
+*in the console*
+
+`>source("RMT4-Back_StrategyAnalyzer.R")`
+
+_To analyze one statement_:
+
+`>result = MT4_StratRep_Analyzer("example_StrategyTester/INDRAFXSCALPING_V4.2 EU M5 2009.htm")`
+
+_To analyze mutilple statement_:
+
+`>result = MT4_StratRep_Analyzer("example_StrategyTester/Stat_Euclidean_Metric (Modified) EU H1 2-2.htm", "example_StrategyTester/Slope Direction Line EA EU H4.htm", "example_StrategyTester/INDRAFXSCALPING_V4.2 EU M5 2009.htm")`
