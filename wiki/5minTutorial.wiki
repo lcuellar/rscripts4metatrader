@@ -4,7 +4,9 @@ This is a quick tutorial on using the provided scripts
 = Introduction =
 
 1. Download R from www.r-project.org
+
 2. Start R
+
 3. Go to [File->Change Dir] and point to the folder containing the scripts
 
 
