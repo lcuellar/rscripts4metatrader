@@ -1,19 +1,16 @@
 #summary One-sentence summary of this page.
 This is a quick tutorial on using the provided scripts
 
-= Introduction =
+= Install =
 
 
- # Download R from [http://www.r-project.org/ R-project home page] 
+ # Download [http://www.r-project.org/ http://www.r-project.org/Rlogo.jpg] 
  # Start R
  # Go to *File->Change Dir* and point to the folder containing the scripts
 
 
 
-= Details =
-
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+= Usage =
 
 *in the console*
 
