@@ -1,8 +1,6 @@
-#summary One-sentence summary of this page.
-This is a quick tutorial on using the provided scripts
+# This is a quick tutorial on using the provided scripts
 
 = Install =
-
 
  # Download [http://www.r-project.org/ http://www.r-project.org/Rlogo.jpg] 
  # Start R
