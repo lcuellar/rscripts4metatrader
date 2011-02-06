@@ -30,12 +30,11 @@
 # =mL7c
 # -----END PGP PUBLIC KEY BLOCK-----
 
-
-library(XML)
-library(fSeries)
-library(zoo)
-library(fCalendar)
-library(chron)
+if (!require(XML)) install.packages('XML') ; library(XML)
+if (!require(fSeries)) install.packages('fSeries') ; library(fSeries)
+if (!require(zoo)) install.packages('zoo') ; library(zoo)
+if (!require(fCalendar)) install.packages('fCalendar') ; library(fCalendar)
+if (!require(chron)) install.packages('chron') ; library(chron)
 
 MT4_StratRep_Analyzer = function(...)
 # USAGE:    output = MT4_StratRep_Analyzer("gbpusd_set3.htm","EurJpy_Set1.htm", "gbpusd_set2.htm")
@@ -162,8 +161,8 @@ MT4_Aggregate_Reports = function (oo)
 
 	# Determining the Initial Deposit as the maximum Initial Balance of all aggregated strategies
 	InitialDeposit = 0;
-	for (i in 1:NbReports) {if (InitialDeposit < (as.numeric(res[[3,i]]$Balance[1])-as.numeric(res[[3,i]]$Profit[1])) ) 
-	{InitialDeposit = as.numeric(res[[3,i]]$Balance[1])-as.numeric(res[[3,i]]$Profit[1])}}
+	for (i in 1:NbReports) {if (InitialDeposit < (as.numeric(oo[[3,i]]$Balance[1])-as.numeric(oo[[3,i]]$Profit[1])) ) 
+	{InitialDeposit = as.numeric(oo[[3,i]]$Balance[1])-as.numeric(oo[[3,i]]$Profit[1])}}
 
 	# Constructing the Accrual of the reports.
 	CumulativeBalance  = c(InitialDeposit) + as.numeric(temp[1]);
