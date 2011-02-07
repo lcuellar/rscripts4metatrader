@@ -117,11 +117,18 @@ MT4_CreateTimeSeries_FromStratRep= function(x)
 	P[P==0]<-NA
 	lot[lot==0]<-NA
 
-	tB  = t[-which(is.na(P))]
-	tP  = t[-which(is.na(P))]
+	tB = t[which(!is.na(P))]
+	tP = t[which(!is.na(P))]
 
+	# TO BE DELETED IF EVERYTHING IS CORRECT WITH THE 2 PREVIOUS LINES
+	#tB  = t[-which(is.na(P))]
+	#tP  = t[-which(is.na(P))]
+	# Allow for cases in which P may consist entirely of NAs or have length 0,
+	#tB = t[0:max(0,which(!is.na(P)))]
+	#tP = t[0:max(0,which(!is.na(P)))]
+
+	B = B[which(!is.na(P))]
 	P = removeNA(P)
-	B = removeNA(B)
 	lot = removeNA(lot)
 
 	list(Balance=B, timeBalance=tB, Profit=P, timeProfit=tP, Lot=lot)
